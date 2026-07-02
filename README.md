@@ -1,3 +1,5 @@
+**License:** [Creative Commons Attribution 4.0 International (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/)
+
 # Kazakh_Handwritten_Letter_Dataset
 
 Kazakh language has 42 letters (from which 33 are native to Russian as well). This dataset consists of 22,662 samples of handwritten Kazakh letters collected from 108 participants. Each letter appears approximately 540 times across the dataset.
