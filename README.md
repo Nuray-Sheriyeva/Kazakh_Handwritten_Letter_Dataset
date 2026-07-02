@@ -1,5 +1,27 @@
 **License:** [Creative Commons Attribution 4.0 International (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/)
 
+## Motivation & Related Work
+
+This dataset was inspired by the Kyrgyz MNIST dataset — a handwritten letter recognition dataset for the Kyrgyz language described in "Recent Advancements and Challenges of Turkic Central Asian Language Processing" (Veitsman & Hartmann, 2025). While similar datasets exist for Kyrgyz and other Central Asian languages, **no equivalent dataset existed for Kazakh** — despite Kazakh having 42 distinct letters and being widely spoken across the region.
+
+This dataset aims to fill that gap and enable future research on Kazakh handwriting recognition, character classification, and related downstream NLP tasks.
+
+### Related Datasets
+
+- **Kyrgyz MNIST** (Kyrgyz handwritten letters): https://github.com/Akyl-AI/KyrgyzMNIST
+- Kazakh language datasets overview: See Veitsman & Hartmann (2025) for a comprehensive survey of available resources
+
+### Citation for Inspiration
+
+```bibtex
+@inproceedings{veitsman2025turkic,
+  title={Recent Advancements and Challenges of Turkic Central Asian Language Processing},
+  author={Veitsman, Yana and Hartmann, Mareike},
+  booktitle={Proceedings of the First Workshop on Language Models for Low-Resource Languages (LoReSLM)},
+  year={2025}
+}
+```
+
 # Kazakh_Handwritten_Letter_Dataset
 
 Kazakh language has 42 letters (from which 33 are native to Russian as well). This dataset consists of 22,662 samples of handwritten Kazakh letters collected from 108 participants. Each letter appears approximately 540 times across the dataset.
