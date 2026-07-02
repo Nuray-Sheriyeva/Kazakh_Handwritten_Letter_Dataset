@@ -28,8 +28,9 @@ Sheets were scanned using the iPhone 15 Notes application (grayscale mode) and s
 ### Processing Pipeline
 
 1. **Letter Extraction:** Automated grid-based cropping identified individual letter cells from each scanned sheet.
-2. **Artifact Removal:** Border-line remnants from the grid (detected via connected-component analysis) were removed to prevent preprocessing noise from affecting model training.
-3. **Normalization:** All images were resized to 128×128 pixels via padding-to-square (to avoid distortion) followed by scaling. This preserves fine stroke detail better than smaller resolutions.
+2.  **Artifact Removal (v2):** Border-line remnants from the scanning grid (detected via connected-component analysis) were automatically removed. This step was critical — it improved baseline accuracy from ~40% to ~92%.
+3. **Normalization:** All images were resized to 128×128 pixels via padding-to-square (to avoid distortion) followed by scaling.
+
 
 ### Quality Control
 
@@ -102,10 +103,12 @@ for row in train_rows:
 
 ## Baseline Results
 
-A ResNet18 model pre-trained on ImageNet and fine-tuned on this dataset achieved:
+A **ResNet18 model** pre-trained on ImageNet and fine-tuned on this dataset achieved:
 
 - **Test Accuracy:** 91.84%
 - **Macro Average F1:** 0.919
+
+**Important:** This accuracy was achieved on the **v2 normalized dataset** (with grid-line artifacts removed via connected-component detection). Without the v2 normalization step, accuracy was ~40.65%, demonstrating the critical importance of data preprocessing.
 
 Per-class results and confusion matrix are available in `baseline_results/`.
 
