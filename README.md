@@ -4,7 +4,7 @@
 
 This dataset was inspired by the Kyrgyz MNIST dataset: a handwritten letter recognition dataset for the Kyrgyz language. It was described in "Recent Advancements and Challenges of Turkic Central Asian Language Processing" (Veitsman & Hartmann, 2025). Specifically, in section 4.4 "Kyrgyz Language Datasets" (page 312).
 
-While similar datasets exist for Kyrgyz and other Central Asian languages, **no equivalent dataset existed for Kazakh at the time of reading mentioned work**, despite Kazakh having 42 distinct letters and being widely spoken across the region.
+While similar datasets exist for Kyrgyz and other Central Asian languages, **no equivalent dataset existed for Kazakh at the time of reading the mentioned work**, despite Kazakh having 42 distinct letters and being widely spoken across the region.
 
 This dataset aims to fill that gap and enable future research on Kazakh handwriting recognition, character classification, and related downstream NLP tasks.
 
