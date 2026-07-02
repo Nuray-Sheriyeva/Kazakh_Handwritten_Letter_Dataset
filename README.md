@@ -2,7 +2,9 @@
 
 ## Motivation & Related Work
 
-This dataset was inspired by the Kyrgyz MNIST dataset — a handwritten letter recognition dataset for the Kyrgyz language described in "Recent Advancements and Challenges of Turkic Central Asian Language Processing" (Veitsman & Hartmann, 2025). While similar datasets exist for Kyrgyz and other Central Asian languages, **no equivalent dataset existed for Kazakh** — despite Kazakh having 42 distinct letters and being widely spoken across the region.
+This dataset was inspired by the Kyrgyz MNIST dataset: a handwritten letter recognition dataset for the Kyrgyz language. It was described in "Recent Advancements and Challenges of Turkic Central Asian Language Processing" (Veitsman & Hartmann, 2025). Specifically, in section 4.4 "Kyrgyz Language Datasets" (page 312).
+
+While similar datasets exist for Kyrgyz and other Central Asian languages, **no equivalent dataset existed for Kazakh at the time of reading mentioned work**, despite Kazakh having 42 distinct letters and being widely spoken across the region.
 
 This dataset aims to fill that gap and enable future research on Kazakh handwriting recognition, character classification, and related downstream NLP tasks.
 
@@ -24,7 +26,7 @@ This dataset aims to fill that gap and enable future research on Kazakh handwrit
 
 # Kazakh_Handwritten_Letter_Dataset
 
-Kazakh language has 42 letters (from which 33 are native to Russian as well). This dataset consists of 22,662 samples of handwritten Kazakh letters collected from 108 participants. Each letter appears approximately 540 times across the dataset.
+Kazakh language has 42 letters (from which 33 are native to Russian as well). This dataset consists of 22,662 samples of handwritten Kazakh letters collected from 106 participants. Each letter appears approximately 540 times across the dataset.
 
 The dataset is split into training, validation, and test sets with 18,047 (79.6%), 2,310 (10.2%), and 2,310 (10.2%) images respectively, assigned at the sheet level to prevent writer-style leakage across splits.
 
@@ -33,7 +35,7 @@ The dataset is split into training, validation, and test sets with 18,047 (79.6%
 - **Total images:** 22,662
 - **Classes:** 42 Kazakh letters
 - **Image format:** 128×128 grayscale PNG
-- **Participants:** 108
+- **Participants:** 106
 - **Split method:** Sheet-level (80/10/10 train/val/test)
 - **Per-class distribution:** ~430 train, ~55 val, ~55 test per letter
 
@@ -41,7 +43,7 @@ The dataset is split into training, validation, and test sets with 18,047 (79.6%
 
 ### Data Collection
 
-108 participants each filled one sheet of paper. Each sheet contained a 21×12 table where participants wrote each of the 42 Kazakh letters 5 times. No writer identity information was retained.
+106 participants each filled one sheet of paper. Each sheet contained a 21×12 table where participants wrote each of the 42 Kazakh letters 5 times. No writer identity information was retained. There are 108 sheets in total because I personally filled out 3 sheets instead of 1, so that there was a bit of different handwriting style too.
 
 ### Digitization
 
@@ -158,6 +160,12 @@ If you use this dataset in your work, please cite it as:
   url={https://github.com/[Nuray-Sheriyeva]/kzdtst}
 }
 ```
+
+## Acknowledgments
+
+This dataset was created as part of my interest in low-resource language processing and Kazakh NLP research. I hope it contributes to the growing efforts in Central Asian language technology and serves as a foundation for future research.
+
+Special thanks to the 106 participants who contributed their handwriting samples, and to the researchers working on Turkic language processing (particularly the work on Kyrgyz handwritten letters) that inspired this project.
 
 ## Contact & Feedback
 
