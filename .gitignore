@@ -1,0 +1,25 @@
+# Folders to exclude
+all_sheets/
+all_sheets_png/
+cropped_all_sheets/
+dataset_root/
+dataset_root_128/
+dataset_root_128_v2/
+dataset_root_normalized/
+dataset_split/
+pass_review/
+pass_review2/
+qc_contact_sheets/
+training_output/
+training_output_improved/
+
+# Mac files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Inspect images (debugging only)
+inspect_*.png
+raw_inspect_*.png
