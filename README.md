@@ -142,7 +142,7 @@ Most letters achieved 90%+ accuracy. Letters with slightly lower accuracy (и, �
 
 - **Grid-line artifacts:** A small subset (~2.3%) of training images contain faint grid-line remnants from the scanning process, though these were largely mitigated via v2 normalization.
 - **Handwriting variation:** High variability in letter size, slant, and stroke pressure across writers. This is natural but does introduce classification ambiguity for visually similar letters.
-- **Class imbalance:** Minor—most letters have 540 samples, but a few have 530-539 due to occasional cropping failures during digitization.
+- **Class imbalance:** Minor—most letters have 540 samples, but a few (13) have 539 due to occasional cropping failures during digitization.
 
 ## License
 
