@@ -157,7 +157,7 @@ If you use this dataset in your work, please cite it as:
   title={Kazakh Handwritten Letter Dataset},
   author={Sheriyeva Nuray M.},
   year={2026},
-  url={https://github.com/[Nuray-Sheriyeva]/kzdtst}
+  url={https://github.com/Nuray-Sheriyeva/Kazakh_Handwritten_Letter_Dataset}
 }
 ```
 
